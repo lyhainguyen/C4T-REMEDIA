@@ -4,6 +4,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.library
+{
+    flex-wrap: wrap-reverse;
+}
+.heading{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 0rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -75,4 +90,26 @@ body{
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
+}
+
+.library::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url("wave-large-reversed.png") center no-repeat;
+    background-size: cover;
+}
+
+.library::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url("wave-large-reversed.png") center no-repeat;
+    background-size: cover;
 }
