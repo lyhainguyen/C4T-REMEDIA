@@ -14,6 +14,9 @@ justify-content: center;
 align-items: center;
 background: linear-gradient(135deg, #21b9c4 0%, #79c259 100%);
 min-height: 100vh;
+background-size: cover;
+padding-top: 100px;
+padding-bottom: 100px;
 }
 
 .container
@@ -123,6 +126,28 @@ min-height: 100vh;
     color: #fff;
 }
 
+.video::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url("wave-large-reversed.png") center no-repeat;
+    background-size: cover;
+}
+
+.gallery::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url("wave-large.png") center no-repeat;
+    background-size: cover;
+}
+
 /*----This is infographics section----*/
 
 .infographics
@@ -133,6 +158,25 @@ align-items: center;
 background: white;
 min-height: 100vh;
 }
+
+.gallery
+{
+    margin: 10px 50px;
+}
+
+.gallery img
+{
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover
+{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
 
 /*----This is facts section----*/
 
